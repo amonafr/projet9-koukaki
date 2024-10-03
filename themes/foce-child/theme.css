@@ -1,0 +1,692 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.story {
+  opacity: 0;
+  animation: fadeIn 5s ease-in-out forwards;
+}
+
+#studio {
+  opacity: 0;
+  animation: fadeIn 5s ease-in-out forwards;
+}
+
+.banner {
+  opacity: 0;
+  animation: fadeIn 5s ease-in-out forwards;
+}
+
+@keyframes bouger-logo {
+  0% {
+    margin-top: 200px;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
+@keyframes flotterCopie {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes rotation-fleurs {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.hibiscus_footer {
+  animation: rotation-fleurs 5s linear infinite;
+}
+
+.randomflower {
+  animation: rotation-fleurs 5s linear infinite;
+}
+
+.flower {
+  animation: rotation-fleurs 5s linear infinite;
+}
+
+.orchid {
+  animation: rotation-fleurs 5s linear infinite;
+}
+
+.sunflower {
+  animation: rotation-fleurs 5s linear infinite;
+}
+
+#studio h2::after {
+  animation: rotation-fleurs 5s linear infinite;
+}
+
+.story__article::after {
+  animation: rotation-fleurs 5s linear infinite;
+}
+
+.site-footer ul::after {
+  animation: rotation-fleurs 5s linear infinite;
+}
+
+.site-footer::after {
+  animation: rotation-fleurs 5s linear infinite;
+}
+
+#studio h2::before {
+  animation: rotation-fleurs 5s linear infinite;
+}
+
+.story h2::after {
+  animation: rotation-fleurs 5s linear infinite;
+}
+
+.site-footer::before {
+  animation: rotation-fleurs 5s linear infinite;
+}
+
+.story h2::after {
+  width: 154px;
+  height: 154px;
+}
+
+@keyframes apparition-titre {
+  0% {
+    opacity: 0;
+    translate: 0px 100px;
+  }
+  30% {
+    opacity: 0.4;
+    translate: 0px 50px;
+  }
+  100% {
+    opacity: 1;
+    translate: 0px 0px;
+  }
+}
+.animation-titre-scroll {
+  opacity: 0;
+  translate: 0px 100px;
+  animation-name: apparition-titre;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.titre {
+  display: block;
+}
+
+.nomination {
+  width: 60%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: last baseline;
+  margin: auto;
+  padding: 0;
+  margin-top: 180px;
+}
+.nomination p {
+  color: #FFF5E9;
+  font-size: 1.8rem;
+  position: absolute;
+  top: -0.2em;
+  left: -1em;
+}
+.nomination img {
+  width: 40%;
+  height: 70%;
+  position: absolute;
+  top: 0px;
+  left: 520px;
+}
+.nomination__nuage {
+  background-image: url("./images/nuage-orange.png");
+  width: 800px;
+  height: 187px;
+  background-color: #FFF5E9;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: unset;
+  padding: 50;
+  scale: 1.2;
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .nomination {
+    width: auto;
+    align-items: center;
+  }
+  .nomination p {
+    font-size: 1.2rem;
+    top: 2em;
+    left: 7.5em;
+  }
+  .nomination__nuage {
+    width: 60%;
+    scale: 0.9;
+    margin-left: 4rem;
+  }
+  .nomination img {
+    width: 20%;
+    height: auto;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .nomination {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
+  .nomination p {
+    font-size: 1rem;
+    background-size: contain;
+    width: 100%;
+    left: 2em;
+    top: 10px;
+  }
+  .nomination img {
+    width: 100%;
+    height: auto;
+    left: 10px;
+    top: 120px;
+  }
+  .nomination__nuage {
+    width: 320px;
+    scale: 1;
+    margin: 0;
+  }
+}
+
+.videoContainer {
+  position: relative;
+  width: 100%;
+  height: 150vh;
+  overflow: hidden;
+}
+.videoContainer__heroVideo {
+  position: absolute;
+  width: 100%;
+  height: 1000px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-attachment: fixed;
+}
+.videoContainer__heroImage {
+  display: none;
+}
+.videoContainer__logo {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+}
+.videoContainer__logo--Image {
+  animation: flotterCopie 3s ease-in-out infinite;
+}
+@media (max-width: 767px) {
+  .videoContainer {
+    height: 100vh;
+    position: relative;
+  }
+  .videoContainer__heroVideo {
+    display: none;
+  }
+  .videoContainer__heroImage {
+    display: block;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .videoContainer__logo {
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    scale: 0.7;
+  }
+  .videoContainer__logo--Image {
+    scale: 0.8;
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .videoContainer__heroVideo {
+    display: none;
+  }
+  .videoContainer__heroImage {
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 150vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .videoContainer__logo {
+    top: 15%;
+    left: 15%;
+    width: 70%;
+  }
+}
+
+.story #characters {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: 600px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 500px;
+  height: 540px;
+  font-size: 20px;
+}
+
+.swiper-slide figure {
+  display: block;
+  width: 400px;
+  height: 440px;
+}
+
+.swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 550px;
+}
+
+.story #place {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  background-image: url("./images/Studio_Koukaki-image_place.png");
+  width: 100%;
+  min-height: 699px;
+  background-size: cover;
+}
+.story #place__grandNuage {
+  opacity: 0.5;
+  position: absolute;
+  top: 20px;
+  left: 485px;
+  background-image: url("./images/big_cloud.png");
+  width: 100%;
+  min-height: 200px;
+  scale: 0.6;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: blur(15px);
+}
+.story #place__petitNuage {
+  background-image: url("./images/little_cloud.png");
+  position: absolute;
+  opacity: 0.5;
+  width: 100%;
+  min-height: 200px;
+  scale: 0.3;
+  top: 180px;
+  left: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: blur(15px);
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .story #place__grandNuage {
+    left: 300px !important;
+  }
+  .story #place__petitNuage {
+    left: 250px !important;
+  }
+}
+@media (max-width: 767px) {
+  .story #place__grandNuage {
+    left: 180px !important;
+  }
+  .story #place__petitNuage {
+    left: 120px !important;
+  }
+  .story #place div > h3 > span {
+    font-size: 1.8rem;
+  }
+}
+
+#navigationSite {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #FFF5E9;
+  position: relative;
+}
+#navigationSite .toggleMenu {
+  display: flex;
+  position: absolute;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  background-color: #FFD5A2;
+  justify-content: flex-end;
+  align-items: center;
+}
+#navigationSite .toggleMenu .menuBurger {
+  width: 9%;
+  background-color: #FFD5A2;
+  border: none;
+}
+#navigationSite .toggleMenu .menuBurger .line {
+  height: 3px;
+  background-color: #000;
+  display: block;
+  margin-block: 2px;
+  width: 20px;
+  transition: all 0.3s ease;
+}
+#navigationSite .toggleMenu a {
+  text-align: center;
+  width: 80%;
+  text-decoration: none;
+  font-size: 27px;
+  font-weight: 700;
+}
+#navigationSite #menuText {
+  width: 50%;
+  display: flex;
+  flex-direction: column !important;
+  height: 300px;
+  margin: 5px auto;
+  gap: 2rem;
+  list-style-type: none;
+  background-color: #FFF5E9;
+}
+#navigationSite #menuText li {
+  font-size: 3.5rem;
+  font-weight: 400;
+  animation: apparition-titre 6s ease-out forwards;
+}
+#navigationSite #menuText li a {
+  text-decoration: none !important;
+}
+#navigationSite #menuText li a:hover {
+  filter: drop-shadow(0px 0px 5px #ff5c00);
+  -webkit-filter: drop-shadow(0px 0px 5px #ff5c00);
+  -moz-filter: drop-shadow(0px 0px 5px #ff5c00);
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  #navigationSite .toggleMenu {
+    top: 0;
+  }
+  #navigationSite .menuPage #menuText li {
+    font-size: 1.5rem;
+  }
+  #navigationSite .menuPage #menuText li a {
+    text-decoration: none !important;
+  }
+  #navigationSite .menuPage #menuText li a:hover {
+    filter: drop-shadow(0px 0px 5px #ff5c00) !important;
+    -webkit-filter: drop-shadow(0px 0px 5px #ff5c00) !important;
+    -moz-filter: drop-shadow(0px 0px 5px #ff5c00) !important;
+  }
+}
+@media (max-width: 767px) {
+  #navigationSite .toggleMenu {
+    top: 0;
+  }
+  #navigationSite .toggleMenu a {
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+  #navigationSite .toggleMenu .menuBurger {
+    width: 12%;
+  }
+}
+
+.menuPage {
+  display: none;
+  position: relative;
+  text-align: center;
+  top: 80px;
+  width: 100%;
+  height: 990px;
+  background-color: #FFF5E9;
+  animation: fadeIn 3s ease-in-out forwards;
+}
+.menuPage .logomenu {
+  width: 10%;
+  margin-top: 20px;
+}
+.menuPage .basmenu {
+  text-align: center;
+  margin: 7rem auto;
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .menuPage .logomenu {
+    width: 15%;
+  }
+  .menuPage .basmenu {
+    margin: 1px auto;
+  }
+}
+@media (max-width: 767px) {
+  .menuPage {
+    height: 150vh;
+    z-index: 99;
+  }
+  .menuPage .logomenu {
+    width: 20%;
+    margin-top: 5px;
+  }
+  .menuPage #menuText {
+    height: 100px;
+    align-items: center;
+    gap: 0 !important;
+    z-index: 999;
+  }
+  .menuPage #menuText li {
+    margin: 0;
+  }
+  .menuPage #menuText li a {
+    font-size: 1rem;
+  }
+  .menuPage .orchid {
+    position: absolute;
+    scale: 0.3;
+    top: 2px !important;
+    left: 1px !important;
+  }
+  .menuPage .sunflower {
+    scale: 0.5;
+  }
+  .menuPage .chat-blue {
+    scale: 0.5;
+    left: 2%;
+  }
+  .menuPage .chat-orange {
+    scale: 0.5;
+    left: 1%;
+  }
+  .menuPage .chat-noir {
+    scale: 0.5;
+    left: 60%;
+  }
+  .menuPage .basmenu {
+    margin: 2.1rem auto;
+    font-size: 0.5rem;
+  }
+}
+
+.menuOuvert {
+  display: block;
+}
+
+.rotate-down {
+  transform: rotate(45deg) translate(3.5px, 3.5px);
+}
+
+.rotate-up {
+  transform: rotate(-45deg) translate(3.5px, -3.5px);
+}
+
+.hide {
+  opacity: 0;
+}
+
+.orchid {
+  position: absolute;
+  left: -4.5rem;
+  top: 3rem;
+  scale: 0.8;
+  z-index: 999;
+}
+
+.sunflower {
+  position: absolute;
+  top: 10%;
+  left: 72%;
+}
+
+.randomflower {
+  position: absolute;
+  scale: 0.4;
+  top: 25%;
+  left: 92%;
+}
+
+.flower {
+  position: absolute;
+  scale: 0.5;
+  top: 45%;
+  left: 17%;
+}
+
+.hibiscus_footer {
+  position: absolute;
+  top: 39%;
+  left: 77%;
+  scale: 0.7;
+}
+
+@keyframes floatchat {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(2px, -5px);
+  }
+  40% {
+    transform: translate(-2px, 0);
+  }
+  60% {
+    transform: translate(2px, -6px);
+  }
+  80% {
+    transform: translate(0, -3px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.chat-blue {
+  position: absolute;
+  top: 19%;
+  left: 23%;
+  animation: floatchat 5s 200ms ease-in-out infinite;
+}
+
+.chat-orange {
+  position: absolute;
+  top: 62%;
+  left: 9%;
+  animation: floatchat 4s 200ms ease-in-out infinite;
+}
+
+.chat-noir {
+  position: absolute;
+  top: 37%;
+  left: 75%;
+  animation: floatchat 6s 200ms ease-in-out infinite;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  #characters {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 600px;
+  }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    font-size: 20px;
+  }
+  .swiper-slide figure {
+    display: block;
+    width: 290px;
+    height: 260px;
+  }
+  .swiper-wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+  }
+}
+@media (max-width: 767px) {
+  .story #characters div {
+    padding: 0;
+  }
+  .story #characters div h3 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    font-size: 20px;
+  }
+  .swiper-slide figure {
+    display: block;
+    width: 290px;
+    height: 260px;
+  }
+  .swiper-wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+  }
+}/*# sourceMappingURL=theme.css.map */
